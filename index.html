@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,13 +8,25 @@
     body {
       font-family: Arial, sans-serif;
       margin: 2em;
-      background-color: #f4f4f4;
+      background-color: #6a0dad; /* Purple tone */
+      background-image: 
+url('https://imgbin.com/png/GzBMGgtJ/musical-note-staff-sheet-music-png');
+      background-repeat: repeat;
+      background-size: cover;
+      color: white;
     }
     h1 {
-      color: #333;
+      color: #ffd700; /* Gold for contrast */
+      text-shadow: 2px 2px 4px #000;
     }
     .song {
       margin-bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black box */
+      padding: 1em;
+      border-radius: 10px;
+    }
+    audio {
+      width: 100%;
     }
   </style>
 </head>
@@ -24,7 +36,7 @@
   <div class="song">
     <p>grandpas farm - Title</p>
     <audio controls>
-      <source src="songs/grandpas farm.mp3"audio/mpeg">
+      <source src="songs/grandpas farm.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </div>
@@ -37,14 +49,14 @@
     </audio>
   </div>
 
-  <div class="song">
-    <p>Tennessee skies - Title</p>
+ <div class="song">
+    <p>the Tennessee skies - Title</p>
     <audio controls>
-      <source src="songs/tennessee skies.mp3" type="audio/mpeg">
+      <source src="songs/tennesse skies.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </div>
-  
+
   <!-- Add more songs by copying the above <div class="song"> -->
 </body>
 </html>
